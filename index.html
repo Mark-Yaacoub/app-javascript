@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- my filr style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- dark mood -->
+    <button class="btn btn-dark " id="dark">Dark Mood</button>
+
+    <!-- nav home-->
+    <!-- button -->
+    <div class="container">
+        <div class="buttons">
+            <button class="btn btn-primary mt-5" id="addData"> ADD</button>
+            <button class="btn btn-primary mt-5" id="viweData">VIEW</button>
+            <button class="btn btn-primary mt-5" id="exportData">EXPORT</button>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="Search...">
+                    <button class="btn btn-primary ">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- addData -->
+    <section id="secctionAdd" class="">
+        <!-- add contanier -->
+        <div class="container">
+            <div class="add-componant">
+                <div id="contact">
+                    <h3 class="text-center pb-4">Add User</h3>
+                    <div class="row">
+                        <div class="in  col-lg-6">
+                            <label class="labelAdd"> Name</label>
+                            <input id="name" class="inputAdd" type="text " placeholder="Name">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelAdd">National ID</label>
+                            <input id="National ID" class="inputAdd" type="text" placeholder="National ID">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelAdd">El-gouna ID</label>
+                            <input id="El-gouna ID" class="inputAdd" type="text" placeholder="El-gouna ID">
+
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelAdd">phone </label>
+                            <input id="phone" class="inputAdd" type="text" placeholder="phone">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelAdd">Resturant</label>
+                            <input list="Resturants" name="Resturant" id="Resturant">
+                            <datalist id="Resturants" name="Resturant" id="Resturant">
+                                <option>la pizzeria de lascal</option>
+                                <option>lascal</option>
+                                <option>lawrance</option>
+                            </datalist>
+                        </div>
+                        <div class="in col-lg-6">
+                            <label class="labelAdd">Position</label>
+                            <input list="Positions" name="Position" id="Position">
+                            <datalist id="Positions">
+                                <option value="Manger">
+                                <option value="chef">
+                                <option value="steward">
+                                <option value="waiter">
+                            </datalist>
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelAdd" for=" start">بدايه الشهاده الصحيه</label>
+                            <input id="date" class="inputAdd" type="date" placeholder="phone">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelAdd" for=" start">نهايه الشهاده الصحيه</label>
+                            <input id="date" class="inputAdd" type="date" placeholder="phone">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelAdd" for="start">img National ID face one</label>
+                            <input type="file" placeholder="img National ID face one" id="imgone">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelAdd" for="start">img National ID face two </label>
+                            <input type="file" placeholder="img National ID face two" id="imgtwo">
+                        </div>
+
+
+                    </div>
+
+                    <br>
+                    <button class="btn btn-success" id="enterData">Sava Data</button>
+                    <button class="btn btn-danger float-right" id="cancelData">cancel</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ViweData -->
+
+
+
+    <section id="secctionViwe" class="none">
+        <div class="container">
+            <div class="add-componant">
+                <div id="contact" action="" method="post">
+                    <h3 class="text-center pb-4">Users Data</h3>
+                    <button class="btn btn-warning top-120 " id="cancelviwe">close list</button>
+                    <div class="row">
+                        <div class="in col-lg-12" id="userList">
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--exportData  -->
+    <section id="secctioExport" class="none">
+
+        <div class="container">
+            <div class="add-componant">
+
+                <form id="contact" action="" method="post">
+                    <h3 class="text-center pb-4">Export Data</h3>
+                    <div class="exportflex">
+
+                        <div class=" col-lg-6">
+                            <label class="labelExport" for="vehicle1">Name</label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Name">
+
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for="vehicle1">National ID</label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for="vehicle1">El-gouna ID</label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for=" validationCustom04">phone </label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for=" validationCustom04">Resturant</label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+
+                        </div>
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for=" validationCustom04">Position</label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for=" start">بدايه الشهاده الصحيه</label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for=" start">نهايه الشهاده الصحيه</label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for="start">img National ID face one</label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+                        </div>
+
+                        <div class="in col-lg-6">
+                            <label class="labelExport" for="start">img National ID face two </label>
+                            <input class="inputExport" type="checkbox" id="vehicle1" name="vehicle1" value="Number">
+                        </div>
+
+
+                    </div>
+
+                    <br>
+                    <button class="btn btn-success">download file dpf</button>
+                    <button class="btn btn-danger float-right" id="cancelexport">cancel</button>
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+   
+
+
+ 
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
